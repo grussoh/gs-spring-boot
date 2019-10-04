@@ -1,8 +1,17 @@
 package aPIclima;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+
+@Entity
 public class Usuario {
 
 	String nombreUsuario,password,nombrePersona;
+	
+	
+	@Id
+	Integer identificador;
 
 	public Usuario(String nombreUsuario, String password, String nombrePersona) {
 		super();
